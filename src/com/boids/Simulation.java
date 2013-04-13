@@ -25,8 +25,8 @@ public class Simulation {
 
 
     private Simulation() {
-        boids = new HashSet<>();
-        obstacles = new HashSet<>();
+        boids = new HashSet<Boid>();
+        obstacles = new HashSet<Obstacle>();
         WORLD_CENTER = new Vector2(Settings.WORLD_MAX_X / 2, Settings.WORLD_MAX_Y / 2);
         random = new Random();
     }
